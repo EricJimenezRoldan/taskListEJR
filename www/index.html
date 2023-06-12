@@ -7,9 +7,7 @@
     to you under the Apache License, Version 2.0 (the
     "License"); you may not use this file except in compliance
     with the License.  You may obtain a copy of the License at
-
     http://www.apache.org/licenses/LICENSE-2.0
-
     Unless required by applicable law or agreed to in writing,
     software distributed under the License is distributed on an
     "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -49,7 +47,9 @@
 		</style>
         <title>Hello World</title>
     </head>
-    <body>		<!-- page 1 -->
+
+
+    <body>		<!-- page Home -->
 		<div data-role="page" id="homePage">
 			<div data-role="header">
 				<h1>Home</h1>
@@ -59,13 +59,14 @@
 				<li><a href="#page2">Page2</a></li>
 				<li><a href="#page3">Page3</a></li>
 			</ul>
-			<input type="text" id="newtask" />
-			<button id="addbutton">+ Afegir</button>
+
+			<button type="button" id="buttonAppend">ADD NEW TASK</button>
 
 			<div data-role="footer" data-position="fixed">
 				<h1>Home</h1>
 			</div><!-- /footer -->
 		</div> <!-- home page -->
+
 
 		<!-- page 1 -->
 		<div data-role="page" id="page1">
@@ -76,11 +77,12 @@
 
 					<div class="ui-content">
 <p>Page 1 content goes here</p>			</div><!-- end page 1 content -->
-			
+
 			<div data-role="footer" data-position="fixed">
 				<h1>Page1</h1>
 			</div><!-- /footer -->
 		</div><!-- /page1 -->
+
 
 		<!-- page 2 -->
 		<div data-role="page" id="page2">
@@ -97,6 +99,7 @@
 				<h1>Page2</h1>
 			</div><!-- /footer -->
 		</div><!-- /page2 -->
+
 
 		<!-- page 3 -->
 		<div data-role="page" id="page3">
@@ -119,14 +122,5 @@
 				$.mobile.defaultPageTransition = "none";
 				$.mobile.defaultDialogTransition = "none";
 		});
-		$(document).ready(function(){
-			init();
-		});
-
-		function init(){
-			$("#addButton").click(function() {
-				alert("Boto clicat");
-			})
-		}
 		</script><script type="text/javascript" src="js/jquery-1.5.0.mobile.min.js"></script><script src="js/index.js"></script></body>
 </html>
