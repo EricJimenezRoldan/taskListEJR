@@ -7,7 +7,9 @@
     to you under the Apache License, Version 2.0 (the
     "License"); you may not use this file except in compliance
     with the License.  You may obtain a copy of the License at
+
     http://www.apache.org/licenses/LICENSE-2.0
+
     Unless required by applicable law or agreed to in writing,
     software distributed under the License is distributed on an
     "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -55,11 +57,8 @@
 				<h1>Home</h1>
 			</div>
 			<ul data-role="listview">
-				<li><a href="#page1">Page1</a></li>
-				<li><a href="#page2">Page2</a></li>
-				<li><a href="#page3">Page3</a></li>
 			</ul>
-
+			
 			<button type="button" id="buttonAppend">ADD NEW TASK</button>
 
 			<div data-role="footer" data-position="fixed">
@@ -68,54 +67,34 @@
 		</div> <!-- home page -->
 
 
-		<!-- page 1 -->
-		<div data-role="page" id="page1">
-			<div data-role="header">
-				<a href="#" data-icon="back" data-rel="back" title="Go back">Back</a>
-				<h1>Page1</h1>
-			</div>
+		<!-- page Edita -->
+		<div data-role="page" id="pageEdita">
 
-					<div class="ui-content">
-<p>Page 1 content goes here</p>			</div><!-- end page 1 content -->
-
-			<div data-role="footer" data-position="fixed">
-				<h1>Page1</h1>
-			</div><!-- /footer -->
-		</div><!-- /page1 -->
-
-
-		<!-- page 2 -->
-		<div data-role="page" id="page2">
-			<div data-role="header">
-				 <a href="#" data-icon="back" data-rel="back" title="Go back">Back</a>
-				<h1>Page2</h1>
-			</div>
-
-			<div class="ui-content">
-				<p>This is page 2</p>
-			</div><!-- end page 2 content -->
-
-			<div data-role="footer" data-position="fixed">
-				<h1>Page2</h1>
-			</div><!-- /footer -->
-		</div><!-- /page2 -->
-
-
-		<!-- page 3 -->
-		<div data-role="page" id="page3">
 			<div data-role="header">
 			<a href="#" data-icon="back" data-rel="back" title="Go back">Back</a>
-				<h1>Page3</h1>
+				<h1>EDITA</h1>
 			</div>
 
 			<div class="ui-content">
-				<p>This is page 3</p>
-			</div><!-- end page 3 content -->
+				<p>EDITA</p>
+				<form>
+					<label for="editInput">Edit task name:</label><br>
+  					<input type="text" id="inputNewName" name="editInput"><br>
+					<button type="button" id="buttonChangeName">CHANGE NAME</button>
+				</form>
+			</div>   <!-- end page 3 content -->
+
 
 			<div data-role="footer" data-position="fixed">
-				<h1>Page3</h1>
+				<h1>EDITA</h1>
 			</div><!-- /footer -->
-		</div><!-- /page3 -->
+		</div><!-- /page Edita -->
+
+
+
+
+
+
 <script src="cordova.js"></script><script type="text/javascript" src="js/jquery-1.11.1.min.js" id="cordova-jquery"></script><script type="text/javascript" id="jqm-trans-disable">
 		/* For having a faster transition */
 		$(document).on("mobileinit", function() {
